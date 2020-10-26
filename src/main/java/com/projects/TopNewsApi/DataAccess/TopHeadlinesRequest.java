@@ -1,5 +1,7 @@
 package com.projects.TopNewsApi.DataAccess;
 
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import com.projects.TopNewsApi.Models.Article;
@@ -49,16 +51,16 @@ public class TopHeadlinesRequest {
         String uriBuilder = API_BASE_URL;
 
         if (!_country.equals("")) {
-            uriBuilder += "country=" + _country + "&";
+            uriBuilder += "country=" + URLEncoder.encode(_country, StandardCharsets.UTF_8) + "&";
         }
         if (!_source.equals("")) {
-            uriBuilder += "sources=" + _source + "&";
+            uriBuilder += "sources=" + URLEncoder.encode(_source, StandardCharsets.UTF_8) + "&";
         }
         if (!_category.equals("")) {
-            uriBuilder += "category=" + _category +"&";
+            uriBuilder += "category=" + URLEncoder.encode(_category, StandardCharsets.UTF_8) +"&";
         }
         if (!_topic.equals("")) {
-            uriBuilder += "q=" + _topic + "&";
+            uriBuilder += "q=" + URLEncoder.encode(_topic, StandardCharsets.UTF_8) + "&";
         }
 
         uriBuilder += "apiKey=" + api_key;
