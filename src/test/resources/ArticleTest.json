@@ -1,0 +1,13 @@
+{
+  "source": {
+    "id": "example-inc",
+    "name": "Example Inc"
+  },
+  "author": "Example Inc",
+  "title": "This title is an example",
+  "description": "This is an example description",
+  "url": "https://www.example.notreal.here/some+page.html",
+  "urlToImage": "https://example.notreal/example+example&example+not+real",
+  "publishedAt": "2020-10-24T13:42:56Z",
+  "content": "Example content Example content Example content Example content Example content Example content Example content Example content Example content"
+}
